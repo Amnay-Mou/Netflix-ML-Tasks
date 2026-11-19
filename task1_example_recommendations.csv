@@ -1,0 +1,51 @@
+query,similarity,title,type,listed_in,country,rating,release_year,because_of
+Chelsea Does,0.962,Fire Chasers,TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2017,
+Chelsea Does,0.962,Flint Town,TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2018,
+Chelsea Does,0.962,Unnatural Selection,TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2019,
+Chelsea Does,0.962,Rotten,TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2019,
+Chelsea Does,0.942,"Sex, Explained",TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2020,
+Chelsea Does,0.942,Explained,TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2021,
+Chelsea Does,0.942,Spycraft,TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2021,
+Chelsea Does,0.883,Brain Games,TV Show,"Docuseries, Science & Nature TV",United States,TV-G,2016,
+Chelsea Does,0.883,NATURE: Natural Born Hustlers,TV Show,"Docuseries, Science & Nature TV",United States,TV-G,2016,
+Chelsea Does,0.883,The Curse of Oak Island,TV Show,"Docuseries, Science & Nature TV",United States,TV-PG,2016,
+Moor,0.892,Saawan,Movie,"Dramas, Independent Movies, International Movies",Pakistan,TV-14,2016,
+Moor,0.892,Dukhtar,Movie,"Dramas, Independent Movies, International Movies",Pakistan,TV-14,2014,
+Moor,0.834,اشتباك,Movie,"Dramas, Independent Movies, International Movies",Egypt,TV-14,2016,
+Moor,0.834,يوم الدين,Movie,"Dramas, Independent Movies, International Movies",Egypt,TV-14,2018,
+Moor,0.831,Ankahi Kahaniya,Movie,"Dramas, Independent Movies, International Movies",,TV-14,2021,
+Moor,0.831,I missed you: Director's Cut,Movie,"Dramas, Independent Movies, International Movies",,TV-14,2021,
+Moor,0.819,Time Out,Movie,"Dramas, Independent Movies, International Movies",India,TV-14,2015,
+Moor,0.819,Haraamkhor,Movie,"Dramas, Independent Movies, International Movies",India,TV-14,2015,
+Moor,0.819,Aisa Yeh Jahaan,Movie,"Dramas, Independent Movies, International Movies",India,TV-14,2015,
+Moor,0.819,Chauthi Koot,Movie,"Dramas, Independent Movies, International Movies",India,TV-14,2015,
+The 24 Hour War,0.964,Shelby American,Movie,"Documentaries, Sports Movies",United States,TV-MA,2019,
+The 24 Hour War,0.946,Uppity: The Willy T. Ribbs Story,Movie,"Documentaries, Sports Movies",United States,TV-MA,2020,
+The 24 Hour War,0.926,Roll With Me,Movie,"Documentaries, Sports Movies",United States,TV-MA,2017,
+The 24 Hour War,0.926,Smash: Motorized Mayhem,Movie,"Documentaries, Sports Movies",United States,TV-MA,2017,
+The 24 Hour War,0.892,Unchained: The Untold Story of Freestyle Motocross,Movie,"Documentaries, Sports Movies",United States,TV-MA,2016,
+The 24 Hour War,0.892,Team Foxcatcher,Movie,"Documentaries, Sports Movies",United States,TV-MA,2016,
+The 24 Hour War,0.892,At All Costs,Movie,"Documentaries, Sports Movies",United States,TV-MA,2016,
+The 24 Hour War,0.892,The Rebound,Movie,"Documentaries, Sports Movies",United States,TV-MA,2016,
+The 24 Hour War,0.892,Resurface,Movie,"Documentaries, Sports Movies",United States,TV-MA,2017,
+The 24 Hour War,0.892,Icarus,Movie,"Documentaries, Sports Movies",United States,TV-MA,2017,
+Chelsea Does + Moor + The 24 Hour War [average],0.68,12 ROUND GUN,Movie,"Dramas, Independent Movies, Sports Movies",United States,TV-MA,2017,
+Chelsea Does + Moor + The 24 Hour War [average],0.68,Amateur,Movie,"Dramas, Independent Movies, Sports Movies",United States,TV-MA,2018,
+Chelsea Does + Moor + The 24 Hour War [average],0.68,First Match,Movie,"Dramas, Independent Movies, Sports Movies",United States,TV-MA,2018,
+Chelsea Does + Moor + The 24 Hour War [average],0.68,The Brawler,Movie,"Dramas, Independent Movies, Sports Movies",United States,TV-MA,2019,
+Chelsea Does + Moor + The 24 Hour War [average],0.649,Shelby American,Movie,"Documentaries, Sports Movies",United States,TV-MA,2019,
+Chelsea Does + Moor + The 24 Hour War [average],0.634,Roll With Me,Movie,"Documentaries, Sports Movies",United States,TV-MA,2017,
+Chelsea Does + Moor + The 24 Hour War [average],0.634,Smash: Motorized Mayhem,Movie,"Documentaries, Sports Movies",United States,TV-MA,2017,
+Chelsea Does + Moor + The 24 Hour War [average],0.62,Uppity: The Willy T. Ribbs Story,Movie,"Documentaries, Sports Movies",United States,TV-MA,2020,
+Chelsea Does + Moor + The 24 Hour War [average],0.611,Unchained: The Untold Story of Freestyle Motocross,Movie,"Documentaries, Sports Movies",United States,TV-MA,2016,
+Chelsea Does + Moor + The 24 Hour War [average],0.611,Team Foxcatcher,Movie,"Documentaries, Sports Movies",United States,TV-MA,2016,
+Chelsea Does + Moor + The 24 Hour War [each in turn],0.962,Fire Chasers,TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2017,Chelsea Does
+Chelsea Does + Moor + The 24 Hour War [each in turn],0.892,Saawan,Movie,"Dramas, Independent Movies, International Movies",Pakistan,TV-14,2016,Moor
+Chelsea Does + Moor + The 24 Hour War [each in turn],0.964,Shelby American,Movie,"Documentaries, Sports Movies",United States,TV-MA,2019,The 24 Hour War
+Chelsea Does + Moor + The 24 Hour War [each in turn],0.962,Flint Town,TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2018,Chelsea Does
+Chelsea Does + Moor + The 24 Hour War [each in turn],0.892,Dukhtar,Movie,"Dramas, Independent Movies, International Movies",Pakistan,TV-14,2014,Moor
+Chelsea Does + Moor + The 24 Hour War [each in turn],0.946,Uppity: The Willy T. Ribbs Story,Movie,"Documentaries, Sports Movies",United States,TV-MA,2020,The 24 Hour War
+Chelsea Does + Moor + The 24 Hour War [each in turn],0.962,Unnatural Selection,TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2019,Chelsea Does
+Chelsea Does + Moor + The 24 Hour War [each in turn],0.834,اشتباك,Movie,"Dramas, Independent Movies, International Movies",Egypt,TV-14,2016,Moor
+Chelsea Does + Moor + The 24 Hour War [each in turn],0.926,Roll With Me,Movie,"Documentaries, Sports Movies",United States,TV-MA,2017,The 24 Hour War
+Chelsea Does + Moor + The 24 Hour War [each in turn],0.962,Rotten,TV Show,"Docuseries, Science & Nature TV",United States,TV-MA,2019,Chelsea Does

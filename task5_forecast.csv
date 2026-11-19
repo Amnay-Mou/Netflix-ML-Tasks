@@ -1,0 +1,37 @@
+series,month,model,forecast,range_low,range_high
+All titles,2021-09-01,Naive (last month),178.0,124.6,231.4
+All titles,2021-10-01,Naive (last month),178.0,124.6,231.4
+All titles,2021-11-01,Naive (last month),178.0,124.6,231.4
+All titles,2021-12-01,Naive (last month),178.0,124.6,231.4
+All titles,2022-01-01,Naive (last month),178.0,124.6,231.4
+All titles,2022-02-01,Naive (last month),178.0,124.6,231.4
+All titles,2022-03-01,Naive (last month),178.0,124.6,231.4
+All titles,2022-04-01,Naive (last month),178.0,124.6,231.4
+All titles,2022-05-01,Naive (last month),178.0,124.6,231.4
+All titles,2022-06-01,Naive (last month),178.0,124.6,231.4
+All titles,2022-07-01,Naive (last month),178.0,124.6,231.4
+All titles,2022-08-01,Naive (last month),178.0,124.6,231.4
+Movies,2021-09-01,12-month average,109.2,81.5,136.9
+Movies,2021-10-01,12-month average,109.2,81.5,136.9
+Movies,2021-11-01,12-month average,109.2,81.5,136.9
+Movies,2021-12-01,12-month average,109.2,81.5,136.9
+Movies,2022-01-01,12-month average,109.2,81.5,136.9
+Movies,2022-02-01,12-month average,109.2,81.5,136.9
+Movies,2022-03-01,12-month average,109.2,81.5,136.9
+Movies,2022-04-01,12-month average,109.2,81.5,136.9
+Movies,2022-05-01,12-month average,109.2,81.5,136.9
+Movies,2022-06-01,12-month average,109.2,81.5,136.9
+Movies,2022-07-01,12-month average,109.2,81.5,136.9
+Movies,2022-08-01,12-month average,109.2,81.5,136.9
+TV Shows,2021-09-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2021-10-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2021-11-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2021-12-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2022-01-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2022-02-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2022-03-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2022-04-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2022-05-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2022-06-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2022-07-01,Naive (last month),61.0,42.7,79.3
+TV Shows,2022-08-01,Naive (last month),61.0,42.7,79.3

@@ -1,0 +1,7 @@
+scenario,strategy,users,genre_hit_share,hit_low_95,hit_high_95,genre_coverage,coverage_low_95,coverage_high_95
+"3 titles, same genre",1 liked title,300,0.2583,0.2236,0.2931,0.67,0.6167,0.7233
+"3 titles, same genre",average of 3,300,0.2697,0.2357,0.3036,0.7133,0.6621,0.7646
+"3 titles, same genre",each of 3 in turn,300,0.2967,0.2655,0.3279,0.79,0.7438,0.8362
+"3 titles, 3 different genres",1 liked title,300,0.3913,0.3548,0.4278,0.3733,0.3487,0.398
+"3 titles, 3 different genres",average of 3,300,0.289,0.2596,0.3184,0.4144,0.3844,0.4445
+"3 titles, 3 different genres",each of 3 in turn,300,0.398,0.3736,0.4224,0.6344,0.6036,0.6653

@@ -1,0 +1,6 @@
+level,model,accuracy,macro_f1
+raw ratings,Baseline (majority),0.368,0.054
+raw ratings,RAW Random Forest,0.558,0.52
+audience groups,Baseline (majority),0.46,0.158
+audience groups,"RAW Random Forest, mapped to groups",0.623,0.602
+audience groups,GROUPED Random Forest,0.634,0.61

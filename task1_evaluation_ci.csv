@@ -1,0 +1,10 @@
+model,metric,mean,low_95,high_95,queries,kind
+Random recommendations,genre_overlap@10,0.0906,0.0835,0.0976,500,baseline
+Random recommendations,genre_hit_rate@10,0.2364,0.2193,0.2535,500,baseline
+Random recommendations,same_type@10,0.578,0.5576,0.5984,500,baseline
+No-genre model (fair test),genre_overlap@10,0.338,0.3189,0.3572,500,independent proxy (genres hidden from the model)
+No-genre model (fair test),genre_hit_rate@10,0.6486,0.6195,0.6777,500,independent proxy (genres hidden from the model)
+No-genre model (fair test),same_type@10,0.9978,0.9958,0.9998,500,metadata consistency (the model uses the type)
+Full model,genre_overlap@10,0.9635,0.9554,0.9717,500,metadata consistency (the model uses the genres)
+Full model,genre_hit_rate@10,1.0,1.0,1.0,500,metadata consistency (the model uses the genres)
+Full model,same_type@10,1.0,1.0,1.0,500,metadata consistency (the model uses the type)

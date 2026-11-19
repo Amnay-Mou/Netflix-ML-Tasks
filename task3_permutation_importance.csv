@@ -1,0 +1,14 @@
+,drop_in_macro_f1,std
+n_genres,-0.0059,0.0037
+n_directors,-0.0044,0.0033
+month_added,-0.0037,0.0039
+release_year,-0.0028,0.002
+year_added,-0.0021,0.0035
+years_to_netflix,-0.0008,0.0021
+has_director,0.0005,0.0022
+n_countries,0.0012,0.0007
+seasons,0.0037,0.0015
+type,0.006,0.0034
+main_country,0.0187,0.0059
+movie_minutes,0.0364,0.0062
+listed_in,0.2757,0.0062

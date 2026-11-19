@@ -1,0 +1,2 @@
+rows,queries,reviewers,invalid,scored_rows,mean,median,distribution,share_4_or_5,best_query,worst_query,best_query_mean,worst_query_mean,agreement_rows,within_one_point
+75,15,2,0,75,2.7666666666666666,3.0,"{1: 9, 2: 56, 3: 52, 4: 27, 5: 6}",0.22,"The Kissing Booth (2018, Movie)","Mark Gatiss: A Study in Sherlock (2016, Movie)",4.1,1.3,75,0.9733333333333334

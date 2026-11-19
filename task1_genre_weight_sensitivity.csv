@@ -1,0 +1,6 @@
+genre_weight,same_titles_as_weight_3,genre_overlap (circular!)
+0.0,0.141,0.337
+1.0,0.603,0.773
+2.0,0.887,0.921
+3.0,1.0,0.963
+5.0,0.959,0.972

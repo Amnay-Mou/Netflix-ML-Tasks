@@ -1,0 +1,7 @@
+variant,macro_f1 mean,macro_f1 std,accuracy mean,accuracy std,family_f1 mean,family_f1 std,teens_f1 mean,teens_f1 std,mature_as_kids_family mean,mature_as_kids_family std,model,version
+Logistic Regression (default),0.607,0.0126,0.6077,0.0117,0.4072,0.0276,0.5422,0.0139,0.1524,0.0147,Logistic Regression,default
+Logistic Regression (tuned),0.6082,0.013,0.609,0.0118,0.4079,0.0291,0.545,0.0146,0.1491,0.0146,Logistic Regression,tuned
+Decision Tree (default),0.5464,0.0149,0.5543,0.0134,0.3519,0.0269,0.4533,0.0155,0.1129,0.01,Decision Tree,default
+Decision Tree (tuned),0.5825,0.0175,0.5806,0.014,0.3931,0.0247,0.4659,0.0339,0.1389,0.0237,Decision Tree,tuned
+Random Forest (default),0.61,0.0156,0.6362,0.0135,0.3987,0.0272,0.5077,0.023,0.0439,0.0061,Random Forest,default
+Random Forest (tuned),0.6287,0.011,0.6382,0.0104,0.4466,0.0196,0.5416,0.0174,0.0839,0.0062,Random Forest,tuned

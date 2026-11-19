@@ -1,0 +1,26 @@
+{
+  "model": "Random Forest",
+  "params": {
+    "n_estimators": 200,
+    "min_samples_leaf": 2,
+    "max_features": "log2",
+    "max_depth": 20
+  },
+  "cv_macro_f1": 0.6265,
+  "all_tuned": {
+    "Logistic Regression": {
+      "C": 0.3
+    },
+    "Decision Tree": {
+      "criterion": "gini",
+      "max_depth": 12,
+      "min_samples_leaf": 20
+    },
+    "Random Forest": {
+      "n_estimators": 200,
+      "min_samples_leaf": 2,
+      "max_features": "log2",
+      "max_depth": 20
+    }
+  }
+}

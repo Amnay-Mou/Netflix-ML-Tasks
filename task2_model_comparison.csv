@@ -1,0 +1,13 @@
+experiment,model,selected,cv_accuracy,cv_accuracy_std,cv_balanced_accuracy,cv_balanced_accuracy_std,cv_f1_TV,cv_f1_TV_std,cv_macro_f1,cv_macro_f1_std,accuracy,balanced_accuracy,precision_Movie,recall_Movie,f1_Movie,precision_TV,recall_TV,f1_TV,macro_f1,roc_auc
+A: with leakage (duration),Baseline (majority),False,0.697,0.0002,0.5,0.0,0.0,0.0,0.4107,0.0001,0.6968,0.5,0.6968,1.0,0.8213,0.0,0.0,0.0,0.4107,0.5
+A: with leakage (duration),Logistic Regression,False,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+A: with leakage (duration),Decision Tree,False,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+A: with leakage (duration),Random Forest,False,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+B: leak-free,Baseline (majority),False,0.697,0.0002,0.5,0.0,0.0,0.0,0.4107,0.0001,0.6968,0.5,0.6968,1.0,0.8213,0.0,0.0,0.0,0.4107,0.5
+B: leak-free,Logistic Regression,True,0.9519,0.0026,0.9403,0.0055,0.9199,0.005,0.9428,0.0033,0.9488,0.9341,0.9558,0.9714,0.9636,0.9318,0.8968,0.914,0.9388,0.974
+B: leak-free,Decision Tree,False,0.9453,0.0049,0.9372,0.0056,0.9104,0.0072,0.9355,0.0054,0.946,0.9347,0.9593,0.9633,0.9613,0.9148,0.9062,0.9105,0.9359,0.9483
+B: leak-free,Random Forest,False,0.9477,0.0027,0.9392,0.0047,0.914,0.0042,0.9382,0.0031,0.9465,0.9373,0.9624,0.9608,0.9616,0.9103,0.9137,0.912,0.9368,0.9724
+C: no date-added features,Baseline (majority),False,0.697,0.0002,0.5,0.0,0.0,0.0,0.4107,0.0001,0.6968,0.5,0.6968,1.0,0.8213,0.0,0.0,0.0,0.4107,0.5
+C: no date-added features,Logistic Regression,True,0.9517,0.0025,0.9397,0.0056,0.9193,0.005,0.9424,0.0033,0.9488,0.9341,0.9558,0.9714,0.9636,0.9318,0.8968,0.914,0.9388,0.974
+C: no date-added features,Decision Tree,False,0.9447,0.0086,0.9374,0.0053,0.9099,0.0117,0.935,0.0092,0.9443,0.934,0.96,0.96,0.96,0.9081,0.9081,0.9081,0.934,0.9565
+C: no date-added features,Random Forest,False,0.9396,0.0043,0.9354,0.003,0.9027,0.0056,0.9294,0.0044,0.9369,0.9293,0.9603,0.9486,0.9544,0.885,0.9099,0.8973,0.9259,0.9689

@@ -1,0 +1,7 @@
+A,B,metric,gap_A_minus_B,low,high,clearly_different,range_level
+Logistic Regression,Decision Tree,accuracy,0.0346,0.004,0.0649,True,0.9917
+Logistic Regression,Decision Tree,macro_f1,0.0342,0.0027,0.0642,True,0.9917
+Logistic Regression,Random Forest,accuracy,-0.0159,-0.0413,0.0092,False,0.9917
+Logistic Regression,Random Forest,macro_f1,-0.0012,-0.0287,0.0262,False,0.9917
+Decision Tree,Random Forest,accuracy,-0.0504,-0.077,-0.0235,True,0.9917
+Decision Tree,Random Forest,macro_f1,-0.0354,-0.0636,-0.0084,True,0.9917

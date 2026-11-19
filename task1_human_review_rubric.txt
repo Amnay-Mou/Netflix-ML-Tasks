@@ -1,0 +1,15 @@
+How to score each suggestion (1 to 5)
+
+Question: how similar is the SUGGESTION to the title in the 'query' column?
+  5 = very similar: it belongs in the same "if you liked this, try that" list
+  4 = similar
+  3 = somewhat related (same broad area, but a different feel)
+  2 = weakly related
+  1 = not similar at all
+
+Judge how alike the two TITLES are (subject, mood, audience), not whether you personally like the suggestion.
+If you do not know a title, look it up, or leave the score empty. Score every row you can.
+Write whole numbers in the last column(s). A second person uses the column reviewer2_score_1to5 and must not
+look at the first person's scores. Then run task1_recommendation_system.py again: it prints the summary.
+
+Limits of this review: a small sample (a few queries with a handful of suggestions each), very few reviewers, reviewers judged how alike two titles are and not whether viewers would enjoy them, and reviewers may not know every title.

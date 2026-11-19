@@ -1,0 +1,18 @@
+{
+  "adopted": false,
+  "weights": {
+    "director": 1.0,
+    "country": 1.0,
+    "rating": 1.0,
+    "type": 1.0,
+    "decade": 0.5,
+    "title": 0.7
+  },
+  "fair_score_hand_picked": 0.3369,
+  "fair_score_tuned": 0.3369,
+  "gain_95_range": [
+    0.0,
+    0.0
+  ],
+  "note": "genre weight is hand-picked (cannot be tuned fairly with a genre-based score)"
+}

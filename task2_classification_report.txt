@@ -1,0 +1,8 @@
+Model chosen by cross-validation on the training part (experiment B): Logistic Regression
+Logistic Regression had the highest cross-validated macro-F1 (0.943) on the training part.
+
+         precision  recall     f1  support
+Movie        0.956   0.971  0.964     1225
+TV Show      0.932   0.897  0.914      533
+
+balanced accuracy 0.9341  macro-F1 0.9388  accuracy 0.9488

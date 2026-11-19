@@ -1,0 +1,4 @@
+,genre_overlap@10,genre_hit_rate@10,same_type@10
+Random recommendations,0.091,0.236,0.578
+No-genre model (fair test),0.338,0.649,0.998
+Full model,0.964,1.0,1.0

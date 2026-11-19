@@ -1,0 +1,19 @@
+series,model,rolling_MAE,final_test_MAE,final_test_RMSE,chosen
+All titles,12-month average,35.428,30.083,40.095,False
+All titles,Random Forest (lags),33.07,34.407,42.97,False
+All titles,Holt-Winters,31.645,39.872,45.848,False
+All titles,Naive (last month),31.283,41.583,53.422,True
+All titles,Seasonal naive (same month last year),35.967,47.333,57.057,False
+All titles,Trend + season regression,36.628,53.339,61.505,False
+Movies,12-month average,25.85,21.25,27.7,True
+Movies,Random Forest (lags),25.602,28.504,32.506,False
+Movies,Holt-Winters,31.13,28.534,34.371,False
+Movies,Naive (last month),27.433,31.167,37.74,False
+Movies,Seasonal naive (same month last year),31.667,33.5,42.706,False
+Movies,Trend + season regression,36.01,43.074,48.834,False
+TV Shows,12-month average,13.006,13.056,17.485,False
+TV Shows,Random Forest (lags),12.082,13.2,18.286,False
+TV Shows,Holt-Winters,12.788,13.304,17.195,False
+TV Shows,Trend + season regression,10.283,13.483,16.551,False
+TV Shows,Naive (last month),9.883,13.75,18.323,True
+TV Shows,Seasonal naive (same month last year),15.767,17.667,21.821,False

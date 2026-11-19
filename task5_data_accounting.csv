@@ -1,0 +1,11 @@
+Step,Titles
+Rows in the file,8790
+  left out: same show_id again,0
+  left out: date_added missing,0
+  left out: date_added could not be read,0
+Titles with a usable date,8790
+  left out: added in the early months that have only a handful of titles,-266
+"  left out: added in the last, incomplete month",-183
+Titles in the monthly series (all titles),8341
+TOTAL left out of the series,449
+"(of the series, type is not Movie / TV Show: in 'All titles' only)",0

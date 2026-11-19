@@ -1,0 +1,7 @@
+{
+  "model": "Logistic Regression",
+  "cv_macro_f1": 0.9428,
+  "cv_macro_f1_std": 0.0033,
+  "selected_by": "5-fold cross-validation on the training part only",
+  "note": "Logistic Regression had the highest cross-validated macro-F1 (0.943) on the training part."
+}

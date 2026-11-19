@@ -1,0 +1,7 @@
+Weights: 41 weight settings were tried on 300 titles and the best one was checked on 500 different titles (genre overlap@10, genres hidden): hand-picked 0.3369 vs tuned 0.3369, gain +0.0000 (95% range +0.0000 to +0.0000). There is no clear gain, so the hand-picked weights are kept.
+
+The genre weight (3.0) stays a judgment call. The brief asks for suggestions 'based on genres, categories and content attributes', so genres lead; and it cannot be tuned against genre overlap because that would be circular. Sensitivity: with genre weight 1 only 60% of the suggested titles are the same as with 3, with weight 5 it is 96%. A non-circular way to justify it is the human review: have reviewers compare lists made with different genre weights.
+
+Several liked titles (300 simulated users per situation): 3 titles, same genre: hit share, each in turn minus average = +0.027 (95% range +0.008 to +0.046): 'each in turn' is clearly better. 3 titles, same genre: genre coverage, each in turn minus average = +0.077 (95% range +0.035 to +0.119): 'each in turn' is clearly better. 3 titles, 3 different genres: hit share, each in turn minus average = +0.109 (95% range +0.080 to +0.138): 'each in turn' is clearly better. 3 titles, 3 different genres: genre coverage, each in turn minus average = +0.220 (95% range +0.188 to +0.252): 'each in turn' is clearly better.
+
+If 'each in turn' is clearly better when the liked titles are from different genres, say so and offer it as the better way to combine very different picks; if there is no clear difference, keep the simple average.

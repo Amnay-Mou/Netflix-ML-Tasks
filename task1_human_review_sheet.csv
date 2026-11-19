@@ -1,0 +1,76 @@
+query,suggestion,type,genres,reviewer_score_1to5,reviewer2_score_1to5
+"Event Horizon (1997, Movie)",Await Further Instructions,Movie,"Horror Movies, Sci-Fi & Fantasy",3,3
+"Event Horizon (1997, Movie)",Doom,Movie,"Action & Adventure, Horror Movies, Sci-Fi & Fantasy",4,4
+"Event Horizon (1997, Movie)",Resident Evil: Afterlife,Movie,"Action & Adventure, Horror Movies, Sci-Fi & Fantasy",3,3
+"Event Horizon (1997, Movie)",Horns,Movie,"Dramas, Horror Movies, Sci-Fi & Fantasy",2,2
+"Event Horizon (1997, Movie)",Deep Blue Sea,Movie,"Action & Adventure, Horror Movies, Sci-Fi & Fantasy",3,3
+"Dear My Friends (2016, TV Show)",Save Me,TV Show,"International TV Shows, Korean TV Shows, TV Dramas",2,1
+"Dear My Friends (2016, TV Show)",Argon,TV Show,"International TV Shows, Korean TV Shows, TV Dramas",2,2
+"Dear My Friends (2016, TV Show)",The Lady in Dignity,TV Show,"International TV Shows, Korean TV Shows, TV Dramas",3,3
+"Dear My Friends (2016, TV Show)",Misaeng,TV Show,"International TV Shows, Korean TV Shows, TV Dramas",3,3
+"Dear My Friends (2016, TV Show)",Life,TV Show,"International TV Shows, Korean TV Shows, TV Dramas",2,3
+"The Kissing Booth (2018, Movie)",The Kissing Booth 2,Movie,"Comedies, Romantic Movies",5,5
+"The Kissing Booth (2018, Movie)",The Kissing Booth 3,Movie,"Comedies, Romantic Movies",5,5
+"The Kissing Booth (2018, Movie)",Resort to Love,Movie,"Comedies, Romantic Movies",3,3
+"The Kissing Booth (2018, Movie)",When We First Met,Movie,"Comedies, Romantic Movies",3,4
+"The Kissing Booth (2018, Movie)",#Roxy,Movie,"Comedies, Romantic Movies",4,4
+"Hush (2016, Movie)","As Above, So Below",Movie,"Horror Movies, Thrillers",2,2
+"Hush (2016, Movie)",He's Out There,Movie,"Horror Movies, Thrillers",5,5
+"Hush (2016, Movie)",Before I Wake,Movie,"Horror Movies, Thrillers",2,2
+"Hush (2016, Movie)",Cabin Fever,Movie,"Horror Movies, Thrillers",2,3
+"Hush (2016, Movie)",The Charnel House,Movie,"Horror Movies, Thrillers",2,2
+"Ethos (2020, TV Show)",Burned Cocoon,TV Show,"International TV Shows, TV Dramas",3,3
+"Ethos (2020, TV Show)",D.P.,TV Show,"International TV Shows, TV Dramas",2,2
+"Ethos (2020, TV Show)",Zindagi in Short,TV Show,"International TV Shows, TV Dramas",2,3
+"Ethos (2020, TV Show)",Oktoberfest: Beer & Blood,TV Show,"International TV Shows, TV Dramas",2,2
+"Ethos (2020, TV Show)",Stateless,TV Show,"International TV Shows, TV Dramas",3,4
+"The BFG (2016, Movie)",Dolphin Tale 2,Movie,"Children & Family Movies, Dramas",2,2
+"The BFG (2016, Movie)",Kahlil Gibran's The Prophet,Movie,"Children & Family Movies, Dramas",2,3
+"The BFG (2016, Movie)",The Little Mermaid,Movie,"Children & Family Movies, Dramas",3,4
+"The BFG (2016, Movie)",Big Miracle,Movie,"Children & Family Movies, Dramas",2,2
+"The BFG (2016, Movie)",Hugo,Movie,"Children & Family Movies, Dramas",4,4
+"The River Runner (2021, Movie)",Westside vs. the World,Movie,"Documentaries, Sports Movies",2,3
+"The River Runner (2021, Movie)",Roll With Me,Movie,"Documentaries, Sports Movies",3,4
+"The River Runner (2021, Movie)",Smash: Motorized Mayhem,Movie,"Documentaries, Sports Movies",2,2
+"The River Runner (2021, Movie)",Untold: Breaking Point,Movie,"Documentaries, Sports Movies",2,3
+"The River Runner (2021, Movie)",Untold: Crime & Penalties,Movie,"Documentaries, Sports Movies",2,2
+"Giri / Haji (2019, TV Show)",Marcella,TV Show,"British TV Shows, Crime TV Shows, International TV Shows",3,4
+"Giri / Haji (2019, TV Show)",Peaky Blinders,TV Show,"British TV Shows, Crime TV Shows, International TV Shows",4,4
+"Giri / Haji (2019, TV Show)",Safe,TV Show,"British TV Shows, Crime TV Shows, International TV Shows",3,3
+"Giri / Haji (2019, TV Show)",Kiss Me First,TV Show,"British TV Shows, Crime TV Shows, International TV Shows",2,2
+"Giri / Haji (2019, TV Show)",Collateral,TV Show,"British TV Shows, Crime TV Shows, International TV Shows",4,4
+"Crime Time (2017, TV Show)",Lupin,TV Show,"Crime TV Shows, International TV Shows, TV Action & Adventure",3,3
+"Crime Time (2017, TV Show)",Ganglands,TV Show,"Crime TV Shows, International TV Shows, TV Action & Adventure",4,4
+"Crime Time (2017, TV Show)",Dealer,TV Show,"Crime TV Shows, International TV Shows, TV Action & Adventure",3,3
+"Crime Time (2017, TV Show)",Fatal Destiny,TV Show,"Crime TV Shows, International TV Shows, TV Action & Adventure",3,3
+"Crime Time (2017, TV Show)",Monkey Twins,TV Show,"Crime TV Shows, International TV Shows, TV Action & Adventure",2,3
+"Kathleen Madigan: Bothering Jesus (2016, Movie)",Patton Oswalt: Talking for Clapping,Movie,Stand-Up Comedy,4,4
+"Kathleen Madigan: Bothering Jesus (2016, Movie)",John Leguizamo's Latin History for Morons,Movie,Stand-Up Comedy,3,3
+"Kathleen Madigan: Bothering Jesus (2016, Movie)",Adel Karam: Live from Beirut,Movie,Stand-Up Comedy,3,3
+"Kathleen Madigan: Bothering Jesus (2016, Movie)",Katt Williams: Great America,Movie,Stand-Up Comedy,4,4
+"Kathleen Madigan: Bothering Jesus (2016, Movie)",Dave Chappelle: The Kennedy Center Mark Twain Prize for American Humor,Movie,Stand-Up Comedy,3,2
+"Hyper HardBoiled Gourmet Report (2017, TV Show)",Journey of an African Colony,TV Show,"Docuseries, International TV Shows",2,2
+"Hyper HardBoiled Gourmet Report (2017, TV Show)",This Is Pop,TV Show,"Docuseries, International TV Shows",2,2
+"Hyper HardBoiled Gourmet Report (2017, TV Show)",Highland: Thailand's Marijuana Awakening,TV Show,"Docuseries, International TV Shows",2,3
+"Hyper HardBoiled Gourmet Report (2017, TV Show)",Dark Tourist,TV Show,"Docuseries, International TV Shows",3,4
+"Hyper HardBoiled Gourmet Report (2017, TV Show)",Strongland,TV Show,"Docuseries, International TV Shows",2,2
+"Mark Gatiss: A Study in Sherlock (2016, Movie)",Natascha Kampusch: The Whole Story,Movie,Movies,2,1
+"Mark Gatiss: A Study in Sherlock (2016, Movie)",Bridgerton - The Afterparty,Movie,Movies,1,3
+"Mark Gatiss: A Study in Sherlock (2016, Movie)",Pac's Scary Halloween,Movie,Movies,1,1
+"Mark Gatiss: A Study in Sherlock (2016, Movie)",Pocoyo Special Sports,Movie,Movies,1,1
+"Mark Gatiss: A Study in Sherlock (2016, Movie)",Santa Pac's Merry Berry Day,Movie,Movies,1,1
+"Black Is Beltza (2018, Movie)",M8 - When Death Rescues Life,Movie,"Dramas, International Movies",2,4
+"Black Is Beltza (2018, Movie)",O Sil?ncio do C?u,Movie,"Dramas, International Movies",3,2
+"Black Is Beltza (2018, Movie)",07:19,Movie,"Dramas, International Movies",2,2
+"Black Is Beltza (2018, Movie)",7 a?os,Movie,"Dramas, International Movies",2,2
+"Black Is Beltza (2018, Movie)",Clash,Movie,"Dramas, International Movies",3,4
+"Space Sweepers (2021, Movie)",The Great Battle,Movie,"Action & Adventure, Dramas, International Movies",2,2
+"Space Sweepers (2021, Movie)",Steel Rain,Movie,"Action & Adventure, Dramas, International Movies",3,3
+"Space Sweepers (2021, Movie)",The Prison,Movie,"Action & Adventure, Dramas, International Movies",2,2
+"Space Sweepers (2021, Movie)",The Age of Shadows,Movie,"Action & Adventure, Dramas, International Movies",3,2
+"Space Sweepers (2021, Movie)",The Stronghold,Movie,"Action & Adventure, Dramas, International Movies",2,2
+"Thank You (2011, Movie)",Ready,Movie,"Comedies, International Movies, Romantic Movies",4,4
+"Thank You (2011, Movie)",Ek Main Aur Ekk Tu,Movie,"Comedies, International Movies, Romantic Movies",3,3
+"Thank You (2011, Movie)",Luv Shuv Tey Chicken Khurana,Movie,"Comedies, International Movies, Romantic Movies",3,3
+"Thank You (2011, Movie)",Tere Naal Love Ho Gaya,Movie,"Comedies, International Movies, Romantic Movies",3,4
+"Thank You (2011, Movie)",Ideachi Kalpana,Movie,"Comedies, International Movies, Romantic Movies",2,2
