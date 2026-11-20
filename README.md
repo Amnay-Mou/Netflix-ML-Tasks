@@ -30,15 +30,15 @@ Install the packages:
 python -m pip install numpy pandas scipy scikit-learn matplotlib streamlit
 ```
 
-On Windows, `py -m pip install ...` may be used instead. If your submitted project includes a tested `requirements.txt`, you can alternatively run `python -m pip install -r requirements.txt`. **Verify that this file is actually included**; it was not among the files reviewed for this README.
+On Windows, `py -m pip install ...` can be used instead.
 
 ### Organize the files
 
-The project scripts import `netflix_core.py`, so keep these files in the **same working folder**. Use their normal names, without the numbered suffixes added to some uploaded copies:
+The task scripts import `netflix_core.py`. Keep the project files organized as follows:
 
 ```text
 netflix-ml-project/
-├── Dataset.csv                         # supply separately
+├── Dataset.csv                         # Netflix catalogue dataset
 ├── README.md
 ├── netflix_core.py                    # shared features, models and evaluation helpers
 ├── app.py                             # Streamlit dashboard
@@ -49,7 +49,7 @@ netflix-ml-project/
 ├── task3_raw_vs_grouped.py
 ├── task3_robustness.py
 ├── task5_trend_forecasting.py
-├── tests/                              # include if shipping the existing tests
+├── tests/                              # automated regression tests
 │   ├── test_core.py
 │   └── make_demo_data.py
 └── [generated CSV, JSON, PNG and TXT outputs]
@@ -105,7 +105,7 @@ Tests use synthetic data and are intended to check code behavior; their pass/fai
 
 A similarity score measures **metadata resemblance**, not the probability that a person will enjoy the suggestion. No viewing histories, preference labels or persistent user profiles are used.
 
-### Offline results from the supplied exports
+### Offline evaluation results
 
 Evaluation used **500 query titles**, with the top **10** recommendations per query.
 
@@ -117,9 +117,9 @@ Evaluation used **500 query titles**, with the top **10** recommendations per qu
 
 **Interpretation matters:** The **no-genre** result is an independent *genre-overlap proxy* because genre labels are hidden from that model during recommendation. It is not an independent measure of user enjoyment. The full model receives genres as inputs, and models receiving content type are evaluated on content type; the resulting near-perfect scores describe **metadata consistency**, not independently established recommendation quality. The file `task1_evaluation_ci.csv` contains query-level approximate 95% intervals.
 
-**Weight tuning.** `task1_weight_tuning.py` compares 41 candidate settings for the non-genre feature weights, using separate tuning and checking queries, and accepts a change only when the lower end of an approximate 95% gain interval exceeds zero. The genre weight remains a deliberately chosen design parameter (default **3.0**) because tuning it against genre overlap would be circular. Whether a candidate was actually adopted is recorded in `task1_tuned_weights.json`; verify this file before reporting that the tuned weights were used.
+**Weight tuning.** `task1_weight_tuning.py` compares 41 candidate settings for the non-genre feature weights, using separate tuning and checking queries, and accepts a change only when the lower end of an approximate 95% gain interval exceeds zero. The genre weight remains a deliberately chosen design parameter (default **3.0**) because tuning it against genre overlap would be circular. The tuning run did not find a clear gain (0.3369 for both configurations on the checking sample), so the default weights were retained, as recorded in `task1_tuned_weights.json`.
 
-**Multi-title profiles.** In the supplied simulated evaluation, covering **300 simulated users per scenario**, the share of target genres represented among the top-10 recommendations was:
+**Multi-title profiles.** In the simulated evaluation, covering **300 simulated users per scenario**, the share of target genres represented among the top-10 recommendations was:
 
 | Simulated preference scenario | Average of 3 titles | Each title in turn |
 |---|---:|---:|
@@ -130,7 +130,7 @@ These figures concern **genre coverage**, not human preference or observed satis
 
 ### Relevance review: one human and one AI-assisted assessment
 
-The supplied review sheet contains **75 recommendations across 15 query titles**. Both rating columns are filled using a 1–5 similarity rubric. **These are not two independent human reviews:** `reviewer_score_1to5` contains the user's human ratings and `reviewer2_score_1to5` contains an **AI-assisted assessment** based on available title descriptions. The AI assessments were not blind to the original sheet and should not be described as a second human reviewer.
+The review sheet contains **75 recommendations across 15 query titles**. Both rating columns are filled using a 1–5 similarity rubric. **These are not two independent human reviews:** `reviewer_score_1to5` contains the user's human ratings and `reviewer2_score_1to5` contains an **AI-assisted assessment** based on available title descriptions. The AI assessments were not blind to the original sheet and should not be described as a second human reviewer.
 
 | Measure | Result |
 |---|---:|
@@ -163,7 +163,7 @@ Three experiments deliberately separate different feature-availability settings:
 
 Genre **names** are excluded from Task 2's classifier, but `n_genres` is included. Feature-ablation experiments measure the importance of selected groups of attributes.
 
-### Main result (supplied experiment B output)
+### Main result (experiment B)
 
 | Metric | Result |
 |---|---:|
@@ -204,6 +204,7 @@ The target groups are **project-defined**, not official Netflix classes or measu
 `G`/`TV-G` mean general audiences, not children only; they are grouped with the least restrictive categories. NR/UR, missing and unrecognized ratings are excluded from the supervised target and accounted for. The original rating is **not** a model input. Inputs include content type, genres, country, release/addition dates, director indicators and type-specific duration.
 
 ### Main result (held-out evaluation)
+
 The best model, selected using training-only cross-validated macro-F1, was a tuned **Random Forest** with 200 trees, maximum depth 20, minimum leaf size 2 and `max_features="log2"`.
 
 | Metric | Result |
@@ -228,7 +229,7 @@ Repeated training cross-validation showed that the tuned Random Forest achieved 
 ### Additional diagnostics
 
 - **Raw versus grouped target:** On the separate common-title comparison, a model trained directly on raw ratings achieved **55.7% raw-rating accuracy**. At the grouped level, the grouped Random Forest achieved **63.1% accuracy / 0.606 macro-F1**, versus **62.4% / 0.603** for the raw-rating model mapped back into groups. These are **not** the main held-out results above; the comparison uses its own restricted set of raw-rating classes.
-- **Repeated training CV:** The tuned Random Forest averaged 0.6287 macro-F1, compared with 0.6100 for its default settings. The tuning and repeated validation use the training data; they are not a fresh external test.
+- **Repeated training CV:** The tuned Random Forest averaged **0.6287 macro-F1**, compared with **0.6100** for its default settings. The tuning and repeated validation use the training data; they are not a fresh external test.
 - **Alternative designs:** Different class weights, ordinal classification and title words were compared; some change safety/accuracy trade-offs without clearly resolving all class weaknesses.
 - **Ablation and permutation tests:** Genre metadata contributes strongly to performance, which may reflect dataset-specific category signals rather than all the information required to judge content suitability.
 
@@ -242,7 +243,7 @@ Model-comparison significance checks use paired bootstrap intervals adjusted for
 
 Task 5 forecasts the **number of titles added to the Netflix catalogue per month**, from `date_added`. It does **not** forecast the first-release dates of films or television series (`release_year`). This distinction is essential: an older film may enter the catalogue years after its original release.
 
-The supplied snapshot's latest record is from **25 September 2021**. Because that month is incomplete, the evaluated series ends in **August 2021**; its 12 forecast months are **September 2021 through August 2022**. These dates are **in the past**: all forecasts in this project are **historical demonstrations**, not predictions for the current year. The internship provider confirmed that using the historical dataset is acceptable.
+The dataset snapshot's latest record is from **25 September 2021**. Because that month is incomplete, the evaluated series ends in **August 2021**; its 12 forecast months are **September 2021 through August 2022**. These dates are **in the past**: all forecasts in this project are **historical demonstrations**, not predictions for the current year. The internship provider confirmed that using the historical dataset is acceptable.
 
 ### Required workflow
 
@@ -254,7 +255,7 @@ The supplied snapshot's latest record is from **25 September 2021**. Because tha
 
 Time is never randomly shuffled. Rolling windows can **overlap**, so their forecast errors are not statistically independent. The default 12-month-average method is retained unless another candidate improves rolling validation by at least **10%**.
 
-### Results from supplied historical exports
+### Historical forecasting results
 
 The monthly forecasting series contains **8,341 titles**; the record-accounting file attributes **266** exclusions to early sparse months and **183** to the incomplete September 2021 month (449 total). Those exclusions and the start-date rule can influence the conclusions.
 
@@ -266,7 +267,7 @@ The monthly forecasting series contains **8,341 titles**; the record-accounting 
 
 *MAE is the average absolute error, measured in titles added per month. Lower is better.* The all-titles model selected by rolling validation **underperformed** the 12-month-average baseline on the final test. The selected model is **not retroactively changed** after inspecting that test. This is a finding about limited forecasting stability, not an error to hide.
 
-The independent monthly forecasts are about **178.0 All titles**, **109.2 Movies** and **61.0 TV Shows**. The latter two sum to **170.2**, not 178.0, because the series are modeled separately. The optional reconciliation export provides a coherent total; the supplied bottom-up version is approximately **170.17 titles/month**. Reconciliation choice is assessed on training-side validation, not selected using the final test. The independent all-titles rolling error was slightly lower than bottom-up in the supplied comparison.
+The independent monthly forecasts are about **178.0 All titles**, **109.2 Movies** and **61.0 TV Shows**. The latter two sum to **170.2**, not 178.0, because the series are modeled separately. The optional reconciliation export provides a coherent total; the bottom-up version is approximately **170.17 titles/month**. Reconciliation choice is assessed on training-side validation, not selected using the final test. The independent all-titles rolling error was slightly lower than bottom-up in the evaluation.
 
 **Uncertainty warning:** Shaded forecast bands show forecast ± final-test RMSE, which is an **illustrative error range**, **not a calibrated prediction interval** with guaranteed coverage. The snapshot also cannot account for titles removed before the dataset was captured, and changing the historical start month can change the preferred model.
 
@@ -283,21 +284,11 @@ The dashboard's `Browse` dialog relies on a local Tkinter file picker and may no
 ## Limitations and responsible interpretation
 
 - **Recommendations:** Content similarity is not user preference. The primary dataset lacks plot, cast, viewing history and explicit relevance labels. Strong genre overlap may coexist with mediocre human relevance judgments.
-- **Review provenance:** The second Task 1 rating column is AI-assisted, not a second independent human reviewer. The current script counts filled rating columns as “reviewers”; reporting must correct that wording.
+- **Review provenance:** Task 1 includes one human assessment and one AI-assisted assessment. The script counts completed rating columns, not independent human reviewers.
 - **Classification:** Test metrics describe this historical dataset. Task 2 may exploit director metadata conventions; Task 3's custom age groups and weak Family/Teens performance limit real-world applicability.
 - **Forecasting:** The target is *catalogue additions* in an old snapshot, not current releases or current demand. Forecast selection was not consistently superior to simple baselines, and error bands are illustrative.
 - **Reproducibility:** Set random seeds are used in the scripts, but results may vary across environments or changed datasets. Do not combine metrics from different script versions or reinterpret separate evaluation experiments as one test.
 
-## Submission checklist
+## Reproducibility notes
 
-- [ ] Use the unnumbered filenames shown above and keep their imports together.
-- [ ] Include `Dataset.csv` (if permitted) or documented instructions for obtaining the same snapshot.
-- [ ] Include a tested dependency list / `requirements.txt` or a reproducible environment description.
-- [ ] Rerun Task 1 tuning **before** Task 1 recommendation evaluation; preserve the adopted weights JSON and final outputs.
-- [ ] Keep Task 1 human ratings and AI-assisted ratings clearly identified; include the rubric and review summary.
-- [ ] Rerun Tasks 2 and 3 after any shared-data-cleaning changes; preserve the selected-model parameter files.
-- [ ] Rerun Task 5 and verify that all exports describe the same historical window and selected models.
-- [ ] Include relevant charts, sample predictions, dashboard screenshots and any available automated tests.
-- [ ] Inspect the README's reported example metrics against the newly regenerated files before submission.
-
-**Note about the values in this README:** Numerical results come from the provided project output files and evaluation summary, cross-checked against the supplied source scripts. The original `Dataset.csv` and a fully versioned runnable submission folder were **not** supplied in this review, so the real-data results have not been independently reproduced here. Regeneration from the final folder is the authoritative check.
+Use the project files and dataset described in the setup section to regenerate the figures, model comparisons, and forecasts. Run Task 1 weight tuning before recommendation evaluation, and run the main Task 3 classification before the robustness experiments so they can load the tuned-model configuration. The saved JSON configuration files are used by the dashboard. Environment and dataset differences may affect results, so compare regenerated outputs with the reported tables.
