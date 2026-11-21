@@ -49,12 +49,12 @@ def find_row(text):
     if kind == "several":
         print(f'"{text}" matches {len(rows)} titles:')
         pick = choose(rows)
-        if pick is None and not sys.stdin.isatty():
+        if pick is None:
             print(f'  Not guessing. Run again with the year, e.g. "{df.at[rows[0], "title"]} ({df.at[rows[0], "release_year"]})".')
         return pick
     print(f'No exact match for "{text}". Did you mean:')
     pick = choose(rows)
-    if pick is None and not sys.stdin.isatty():
+    if pick is None:
         print("  Not guessing. Run again with the exact title.")
     return pick
 

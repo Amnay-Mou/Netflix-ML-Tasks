@@ -944,9 +944,16 @@ class Task3AuditTests(unittest.TestCase):
         self.assertEqual(nc.t3_config(path)[:2], ("Random Forest", {"max_depth": 5})) 
         self.assertEqual(nc.t3_all_tuned(os.path.join(self.tmp.name, "missing.json")), {})
 
+    # @staticmethod
+    # def _source(name):
+    #     with open(os.path.join(os.path.dirname(__file__), "..", name)) as f:
+    #         return f.read()
     @staticmethod
     def _source(name):
-        with open(os.path.join(os.path.dirname(__file__), "..", name)) as f:
+        with open(
+            os.path.join(os.path.dirname(__file__), "..", name),
+            encoding="utf-8"
+        ) as f:
             return f.read()
 
     def _run_script(self, name, *args):
@@ -1017,7 +1024,7 @@ class Task2AuditTests(unittest.TestCase):
         cls.tmp.cleanup()
     @staticmethod
     def _source(name):
-        with open(os.path.join(os.path.dirname(__file__), "..", name)) as f:
+        with open(os.path.join(os.path.dirname(__file__), "..", name), encoding="utf-8") as f:
             return f.read()
     def _data(self):
         return nc.prep_t2(self.path, fill_years=False)
@@ -1209,9 +1216,16 @@ class Task1AuditTests(unittest.TestCase):
     def tearDownClass(cls):
         cls.tmp.cleanup()
 
+    # @staticmethod
+    # def _source(name):
+    #     with open(os.path.join(os.path.dirname(__file__), "..", name)) as f:
+    #         return f.read()
     @staticmethod
     def _source(name):
-        with open(os.path.join(os.path.dirname(__file__), "..", name)) as f:
+        with open(
+            os.path.join(os.path.dirname(__file__), "..", name),
+            encoding="utf-8"
+        ) as f:
             return f.read()
 
     def _run(self, script, *args, path=None):
